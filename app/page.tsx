@@ -1,3 +1,4 @@
+import { SecaoCinco } from '@/components/secao-cinco'
 import { SecaoDois } from '@/components/secao-dois'
 import { SecaoQuatro } from '@/components/secao-quatro'
 import { SecaoTres } from '@/components/secao-tres'
@@ -10,6 +11,7 @@ export default function Home() {
       <SecaoDois />
       <SecaoTres />
       <SecaoQuatro />
+      <SecaoCinco />
     </>
   )
 }

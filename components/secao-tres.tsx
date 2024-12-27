@@ -16,16 +16,14 @@ export function SecaoTres() {
       />
       <div className="col-span-2 flex flex-col">
         <span className="mb-5 font-medium uppercase tracking-widest text-[#888888]">
-          Connectivity
+          Sobre nós
         </span>
         <span className="mb-4 text-6xl font-semibold text-white">
-          Data Connectivity on any platform
+          Buscamos inovação com interfaces transformadoras
         </span>
         <span className="text-lg font-medium text-[#888888]">
-          Ability to connect and access data from multiple OS platforms,
-          including applications and websites. You will experience high
-          flexibility in managing and analyzing data to support the best
-          decision making.
+          Somos um estúdio especializado em design de interfaces que visa
+          atender grandes e médias empresas.
         </span>
         <ul className="mt-6 grid w-full max-w-[600px] grid-cols-2 gap-4">
           <li className="flex items-center gap-2 text-white">

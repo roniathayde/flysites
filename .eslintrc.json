@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals","@rocketseat/eslint-config/next", "next/typescript", "prettier"],
   "plugins": ["simple-import-sort"],
   "rules": {
-    "simple-import-sort/imports": "error"
+    "simple-import-sort/imports": "error",
+    "camelcase": "off"
   }
 }

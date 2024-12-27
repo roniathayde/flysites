@@ -1,3 +1,5 @@
+'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 import Estrelas from '@/public/estrelas.png'
@@ -7,24 +9,41 @@ import { Button } from './ui/button'
 export function SecaoUm() {
   return (
     <div className="ml-auto mr-auto w-full max-w-[1240px] py-20">
-      <span className="mb-5 text-lg uppercase tracking-widest text-[#888888]">
-        Success of financial management
-      </span>
+      <motion.span
+        initial={{ translateY: -50, opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{
+          translateY: 0,
+          opacity: 1,
+          transition: { duration: 0.6 },
+        }}
+        className="mb-5 block text-lg uppercase tracking-widest text-[#888888]"
+      >
+        Criamos interfaces que levam sua marca a um outro nível.
+      </motion.span>
       <h1 className="mb-4 text-7xl font-bold text-white">
-        The window to success starts with managing your finances
+        Apresente sua marca ao mundo com um site único
       </h1>
-      <span className="text-base text-[#888888]">
-        Embark on a transformative journey to success by mastering the art of
-        financial management, where the key to unlocking your full potential
-        lies in your ability to effectively control and optimize your finances,
-        ensuring stability, growth and prosperity.
-      </span>
+      <motion.span
+        initial={{ translateX: -50, opacity: 0 }}
+        viewport={{ once: true }}
+        whileInView={{
+          translateX: 0,
+          opacity: 1,
+          transition: { duration: 1.2, delay: 0.6 },
+        }}
+        className="block text-base text-[#888888]"
+      >
+        Dê o primeiro passo para transformar sua empresa. Um site pode aumentar
+        sua visibilidade, atrair mais clientes e garantir crescimento e
+        estabilidade.
+      </motion.span>
       <footer className="mt-16 flex justify-between">
         <Button
           size={'lg'}
           className="bg-[#843DF7] font-semibold hover:bg-[#843DF7]"
         >
-          Try Pinancego for 3 days
+          Experimente FlySites
         </Button>
 
         <div className="flex gap-10">
