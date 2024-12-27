@@ -1,7 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
+import { div } from 'motion/react-client'
 import Image from 'next/image'
 
+import TypingAnimation from '@/components/ui/typing-animation'
 import Estrelas from '@/public/estrelas.png'
 
 import { Button } from './ui/button'
@@ -21,9 +23,13 @@ export function SecaoUm() {
       >
         Criamos interfaces que levam sua marca a um outro nível.
       </motion.span>
-      <h1 className="mb-4 text-7xl font-bold text-white">
+      <TypingAnimation
+        duration={40}
+        as="h1"
+        className="mb-4 min-h-[144px] text-7xl font-bold text-white"
+      >
         Apresente sua marca ao mundo com um site único
-      </h1>
+      </TypingAnimation>
       <motion.span
         initial={{ translateX: -50, opacity: 0 }}
         viewport={{ once: true }}
