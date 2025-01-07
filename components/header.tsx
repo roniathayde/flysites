@@ -54,23 +54,16 @@ export function Header() {
           <nav className="h-full w-full max-w-[420px] items-center justify-around gap-2 space-y-3">
             <Link
               className="flex h-full items-center border-b border-transparent text-sm font-semibold text-white transition-colors"
-              href="#"
+              href="#sobre"
             >
               O que fazemos
             </Link>
             <div className="h-[1px] w-full bg-[#888888]/20" />
             <Link
               className="flex h-full items-center border-b border-transparent text-sm font-semibold text-white transition-colors"
-              href="#"
+              href="#como-funciona"
             >
-              Cases
-            </Link>
-            <div className="h-[1px] w-full bg-[#888888]/20" />
-            <Link
-              className="flex h-full items-center border-b border-transparent text-sm font-semibold text-white transition-colors"
-              href="#"
-            >
-              Workflow
+              Como funciona
             </Link>
             <div className="h-[1px] w-full bg-[#888888]/20" />
             <Link
