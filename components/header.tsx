@@ -36,7 +36,7 @@ export function Header() {
 
         <Link
           className="flex h-full items-center border-b border-transparent text-sm font-semibold text-[#888888] transition-colors hover:border-[#843DF7] hover:text-white"
-          href="#"
+          href="#comece"
         >
           Comece um projeto
         </Link>
