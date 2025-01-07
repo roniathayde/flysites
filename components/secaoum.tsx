@@ -7,7 +7,10 @@ import { Button } from './ui/button'
 
 export function SecaoUm() {
   return (
-    <div className="ml-auto mr-auto w-full max-w-[1240px] px-2 py-4 md:py-20 lg:px-0">
+    <div
+      id="comece"
+      className="ml-auto mr-auto w-full max-w-[1240px] px-2 py-4 md:py-20 lg:px-0"
+    >
       <motion.span
         initial={{ translateY: -50, opacity: 0 }}
         viewport={{ once: true }}
