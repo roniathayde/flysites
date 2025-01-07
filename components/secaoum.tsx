@@ -1,16 +1,13 @@
 'use client'
 import { motion } from 'framer-motion'
-import { div } from 'motion/react-client'
-import Image from 'next/image'
 
 import TypingAnimation from '@/components/ui/typing-animation'
-import Estrelas from '@/public/estrelas.png'
 
 import { Button } from './ui/button'
 
 export function SecaoUm() {
   return (
-    <div className="ml-auto mr-auto w-full max-w-[1240px] py-20">
+    <div className="ml-auto mr-auto w-full max-w-[1240px] px-2 py-4 md:py-20 lg:px-0">
       <motion.span
         initial={{ translateY: -50, opacity: 0 }}
         viewport={{ once: true }}
@@ -26,7 +23,7 @@ export function SecaoUm() {
       <TypingAnimation
         duration={40}
         as="h1"
-        className="mb-4 min-h-[144px] text-7xl font-bold text-white"
+        className="mb-4 min-h-[144px] text-5xl font-bold text-white sm:text-7xl"
       >
         Apresente sua marca ao mundo com um site único
       </TypingAnimation>
@@ -49,10 +46,10 @@ export function SecaoUm() {
           size={'lg'}
           className="bg-[#843DF7] font-semibold hover:bg-[#843DF7]"
         >
-          Experimente FlySites
+          Fale conosco
         </Button>
 
-        <div className="flex gap-10">
+        {/* <div className="flex gap-10">
           <div className="flex flex-col items-end justify-between">
             <Image src={Estrelas} alt="" width={108} height={20} />
             <span className="text-sm font-medium text-[#888888]">
@@ -65,7 +62,7 @@ export function SecaoUm() {
             <div className="relative -ml-6 size-[40px] rounded-full border-2 border-[#0D0D0D] bg-[#888]" />
             <div className="relative -ml-6 size-[40px] rounded-full border-2 border-[#0D0D0D] bg-[#888]" />
           </div>
-        </div>
+        </div> */}
       </footer>
     </div>
   )

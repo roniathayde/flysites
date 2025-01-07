@@ -6,16 +6,19 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import ImageFrame from '@/public/iframe2.png'
+import ImageFrame from '@/public/flysites-processo-criativo.jpg'
 
 export function SecaoQuatro() {
   return (
-    <div className="ml-auto mr-auto grid w-full max-w-[1240px] grid-cols-2 items-center gap-12 py-20">
-      <div className="flex max-w-[600px] flex-col">
+    <div
+      id="como-funciona"
+      className="ml-auto mr-auto grid w-full max-w-[1240px] grid-cols-1 items-center gap-12 px-2 py-6 md:py-20 lg:grid-cols-2 lg:px-0"
+    >
+      <div className="flex w-full flex-col lg:max-w-[600px]">
         <span className="mb-5 font-medium uppercase tracking-widest text-[#888888]">
           Como funciona
         </span>
-        <span className="mb-4 text-6xl font-semibold text-white">
+        <span className="mb-4 text-4xl font-semibold text-white sm:text-6xl">
           Processo criativo moldado para simplicidade
         </span>
         <span className="text-sm font-medium text-[#888888]">
@@ -66,10 +69,10 @@ export function SecaoQuatro() {
       </div>
       <Image
         src={ImageFrame}
-        className="object-contain"
+        className="h-full max-h-[400px] w-full rounded-lg object-cover lg:max-h-full"
         alt=""
-        width={520}
-        height={680}
+        width={720}
+        height={780}
         quality={100}
       />
     </div>

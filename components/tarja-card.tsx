@@ -14,7 +14,9 @@ export function TarjaCard({ title, description, icon: Icon }: ITarjaCard) {
       </div>
       <div>
         <span className="block text-xl font-bold text-white">{title}</span>
-        <span className="block text-sm text-[#A5A5A5]">{description}</span>
+        <span className="block max-w-[220px] text-sm text-[#A5A5A5]">
+          {description}
+        </span>
       </div>
     </div>
   )
