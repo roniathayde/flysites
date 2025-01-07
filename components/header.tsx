@@ -1,6 +1,9 @@
+'use client'
 import { Menu } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useParams } from 'next/navigation'
+import { useEffect, useState } from 'react'
 
 import {
   Popover,
@@ -12,6 +15,13 @@ import Logotipo from '@/public/chart-square.svg'
 import { Button } from './ui/button'
 
 export function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+  const params = useParams()
+
+  useEffect(() => {
+    setIsOpen(false)
+  }, [params])
+
   return (
     <header className="sticky top-0 ml-auto mr-auto flex h-[64px] w-full max-w-[1240px] items-center justify-between gap-4 border-b border-[#888888]/20 bg-[#0D0D0D]/70 px-2 backdrop-blur-lg lg:justify-start">
       <div className="flex items-center gap-2">
@@ -41,13 +51,14 @@ export function Header() {
           Comece um projeto
         </Link>
       </nav>
-      <Popover>
+      <Popover open={isOpen} onOpenChange={setIsOpen}>
         <PopoverTrigger className="block text-white lg:hidden" asChild>
           <Button>
             <Menu />
           </Button>
         </PopoverTrigger>
         <PopoverContent
+          onCloseAutoFocus={(event) => event.preventDefault()}
           sideOffset={14}
           className="w-screen rounded-none border-[#888888]/20 bg-[#0D0D0D]/70 backdrop-blur-lg"
         >

@@ -11,7 +11,7 @@ export function SecaoTres() {
     >
       <Image
         src={ImageFrame}
-        className="order-2 max-h-[400px] w-full rounded-lg object-cover lg:order-1"
+        className="order-2 max-h-[400px] w-full rounded-lg object-cover lg:order-1 lg:max-h-full"
         alt=""
         width={520}
         height={680}
