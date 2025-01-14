@@ -35,27 +35,27 @@ export function SecaoTres() {
             (desktop, tablet e smartphone)
           </li>
           <li className="flex items-center gap-2 text-white">
-            <CheckCheck />
+            <CheckCheck className="min-h-6 min-w-6" />
             SEO <br />
             (otimização para motores de busca, melhorando visibilidade e
             alcance)
           </li>
           <li className="flex items-center gap-2 text-white">
-            <CheckCheck />
+            <CheckCheck className="min-h-6 min-w-6" />
             Performance otimizada <br />
             (sites rápidos e leves)
           </li>
           <li className="flex items-center gap-2 text-white">
-            <CheckCheck />
+            <CheckCheck className="min-h-6 min-w-6" />
             Integração com plataformas populares <br />
             (WordPress, WooCommerce, etc.)
           </li>
           <li className="flex items-center gap-2 text-white">
-            <CheckCheck />
+            <CheckCheck className="min-h-6 min-w-6" />
             Design exclusivo e personalizado
           </li>
           <li className="flex items-center gap-2 text-white">
-            <CheckCheck />
+            <CheckCheck className="min-h-6 min-w-6" />
             Configuração de formulários e captação de leads
           </li>
         </ul>
