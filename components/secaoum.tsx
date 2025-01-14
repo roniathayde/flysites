@@ -49,7 +49,7 @@ export function SecaoUm() {
           size={'lg'}
           className="bg-[#843DF7] font-semibold hover:bg-[#843DF7]"
         >
-          Fale conosco
+          <a href="#contato">Fale conosco</a>
         </Button>
 
         {/* <div className="flex gap-10">
